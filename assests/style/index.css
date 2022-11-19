@@ -1,73 +1,86 @@
 @import './reset.css';
- 
-:root {
- --app-dark-bg: #1a1d28;
- --app-red: #ff3c57;
- --app-green: #33ab4e;
- --app-purple: #833cff;
- --app-orange: #ff833c;
- --app-blue: #3c57ff;
- --app-blue-hover: #364ee6;
-}
- 
-body {
- background-color: var(--app-dark-bg);
-}
- 
- .container {
- width: min(100% - 30px, 1280px);
- margin-inline: auto;
- height: 100vh;
- 
-} 
 
-.center{
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-red: #ff3c57;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+}
+
+body {
+    background-color: var(--app-dark-bg);
+}
+
+.container {
+    width: min(100% - 30px, 1280px);
+    margin-inline: auto;
+    height: 100vh;
+
+}
+
+.center {
     height: 100vh;
     display: grid;
     place-items: center;
     text-align: center;
 }
-.clock{
+
+.clock {
     place-content: center;
     color: #fff;
     font-size: 90px;
     font-weight: 600;
 }
-.alarmtime{
+
+.alarmtime {
     display: grid;
     color: #fff;
     place-items: center;
     text-align: center;
 
 }
-.showalarm{
-    height:20px;
+
+.showalarm {
+    height: 20px;
     width: 180px;
-    
+
     place-content: center;
     color: #fff;
     font-size: 18px;
 }
 
 
-.buttons{
+.buttons {
     margin-top: 20px;
+    
 }
-.alarm{
+
+.alarm {
     width: 90px;
     height: 40px;
-    background-color:var(--app-orange);
+    background-color: var(--app-orange);
     text-align: center;
     border-radius: 40px;
     place-content: center;
+    font-weight: 600;
+   
 }
-.setalarm{
-    width: 160px;
+.alarm:hover{
+    background-color: rgb(233, 80, 20);
+}
+
+.setalarm {
+    width: 120px;
     height: 40px;
-    background-color:lightgray;
+    background-color: lightgray;
     text-align: center;
     color: black;
+    margin-right: 10px;
     border-radius: 40px;
     font-size: 15px;
-    
+    font-weight: 600;
+
 }
