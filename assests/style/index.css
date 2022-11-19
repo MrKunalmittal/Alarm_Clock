@@ -42,11 +42,11 @@ body {
 }
 .showalarm{
     height:20px;
-    width: 100px;
+    width: 180px;
     
     place-content: center;
     color: #fff;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 
