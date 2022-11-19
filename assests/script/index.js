@@ -16,6 +16,7 @@ let showAlarm = select('.showalarm');
 let btn = select('.button');
 let alarm = select('.alarm');
 let setAlarm = select('.setalarm');
+const timeRegex = /^([01]?[0-9]|2[0-3]):[0-5][0-9]/;
 
 const alarmSound = new Audio('./assests/media/alarm.mp3');
 alarmSound.type = 'audio/mp3;'
@@ -36,19 +37,26 @@ function currentTime () {
 
     current.innerText = timeString;
 
-    let alarmValue = setAlarm.value;
+    let alarmValue = setAlarm.value.trim();
+    
+    
+    
 
     alarm.addEventListener('click', function(){
-     
-      showAlarm.innerText = alarmValue;
-  
+
+      if(alarmValue.length===0){
+        showAlarm.innerText ='Enter correct time\n';
+        valid=false;
+        
+      }else if(timeRegex.test(alarmValue)){
+        showAlarm.innerText = alarmValue;
+      }
     });
     
 
 
     if(alarmTime == alarmValue){
-      document.body.style.backgroundColor= 'lightgreen';
-      //document.alarm.style.backgroundColor = 'lightgreen';
+      document.body.style.backgroundColor= 'red';
       alarmSound.play();
       
     }
