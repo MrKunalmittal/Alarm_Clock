@@ -1,0 +1,73 @@
+@import './reset.css';
+ 
+:root {
+ --app-dark-bg: #1a1d28;
+ --app-red: #ff3c57;
+ --app-green: #33ab4e;
+ --app-purple: #833cff;
+ --app-orange: #ff833c;
+ --app-blue: #3c57ff;
+ --app-blue-hover: #364ee6;
+}
+ 
+body {
+ background-color: var(--app-dark-bg);
+}
+ 
+ .container {
+ width: min(100% - 30px, 1280px);
+ margin-inline: auto;
+ height: 100vh;
+ 
+} 
+
+.center{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.clock{
+    place-content: center;
+    color: #fff;
+    font-size: 90px;
+    font-weight: 600;
+}
+.alarmtime{
+    display: grid;
+    color: #fff;
+    place-items: center;
+    text-align: center;
+
+}
+.showalarm{
+    height:20px;
+    width: 100px;
+    
+    place-content: center;
+    color: #fff;
+    font-size: 15px;
+}
+
+
+.buttons{
+    margin-top: 20px;
+}
+.alarm{
+    width: 90px;
+    height: 40px;
+    background-color:var(--app-orange);
+    text-align: center;
+    border-radius: 40px;
+    place-content: center;
+}
+.setalarm{
+    width: 160px;
+    height: 40px;
+    background-color:lightgray;
+    text-align: center;
+    color: black;
+    border-radius: 40px;
+    font-size: 15px;
+    
+}
