@@ -33,6 +33,8 @@ body {
     color: #fff;
     font-size: 90px;
     font-weight: 600;
+    font-style: oblique;
+    font-family:serif;
 }
 
 .alarmtime {
